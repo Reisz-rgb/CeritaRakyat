@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702585449108",
+    "project_id": "ceritarakyat-7422d",
+    "storage_bucket": "ceritarakyat-7422d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702585449108:android:6409fba05ec1d7e5376281",
+        "android_client_info": {
+          "package_name": "com.mycompany.ceritarakyat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-3LkNzOSIciROtC65APPoFq4C-VP7sx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
