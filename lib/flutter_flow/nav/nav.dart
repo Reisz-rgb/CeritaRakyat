@@ -13,6 +13,8 @@ export 'serialization_util.dart';
 
 const kTransitionInfoKey = '__transition_info__';
 
+GlobalKey<NavigatorState> appNavigatorKey = GlobalKey<NavigatorState>();
+
 class AppStateNotifier extends ChangeNotifier {
   AppStateNotifier._();
 
@@ -70,6 +72,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
+      navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
           appStateNotifier.loggedIn ? const SearchPageWidget() : const HomePageWidget(),
       routes: [
@@ -307,7 +310,7 @@ class FFRoute {
               ? Container(
                   color: Colors.transparent,
                   child: Image.asset(
-                    'assets/images/Green_Art_Deco_Ornament_IOS_Home_Screen.png',
+                    'assets/images/Green_Art_Deco_Ornament_IOS_Home_Screen_(2).png',
                     fit: BoxFit.cover,
                   ),
                 )
